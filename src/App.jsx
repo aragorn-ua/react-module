@@ -26,12 +26,16 @@ const App = () => {
 
   return (
     <div>
+      <p>  MODULE  4  </p>
       <SearchForm onSearch={handleSearch} />
       {loading && <p>Loading data, please wait...</p>}
       {error && (
         <p>Whoops, something went wrong! Please try reloading this page!</p>
       )}
       {articles.length > 0 && <ArticleList items={articles} />}
+      <p>END OF 4-th MODULE</p>
+
+
     </div>
   );
 };
